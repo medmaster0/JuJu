@@ -42,7 +42,6 @@ func gen_intelligence_sigil():
 		#Add it to the list
 		vertices.append(temp_vertex)
 		
-		
 
 #Draws the sigil by connecting straight lines between all the stored vertices in vertices[]
 func draw_intelligence_sigil():
@@ -53,5 +52,11 @@ func draw_intelligence_sigil():
 		#Draw a line between this point and the next
 		var first_point = $TileMap.map_to_world(vertices[v])
 		var second_point = $TileMap.map_to_world(vertices[v+1])
-		draw_line(first_point, second_point,line_color, 5,true)
-		update()
+		draw_line(first_point, second_point,line_color, 1,true)
+		
+	
+	#Also, move sprites to both ends of the sigil
+	$Sprite.position = $TileMap.map_to_world(vertices[0])
+	$Sprite2.position = $TileMap.map_to_world(vertices[-1])
+	
+		

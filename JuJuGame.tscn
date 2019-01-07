@@ -5,7 +5,7 @@
 [ext_resource path="res://scenes/Angel.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/Sigil.tscn" type="PackedScene" id=4]
 
-[node name="JuJuGame" type="Node" index="0"]
+[node name="JuJuGame" type="Node"]
 
 [node name="Creature" parent="." index="0" instance=ExtResource( 1 )]
 
