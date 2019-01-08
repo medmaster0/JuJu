@@ -11,8 +11,10 @@ func _ready():
 	
 	#Color the sprites
 	#$Sprite.modulate = MedAlgo.generate_gold()
-	$Sprite.modulate = Color(1,0.9,0.1)
-	$Sprite2.modulate = MedAlgo.generate_brown()
+	#$Sprite.modulate = Color(1,0.9,0.1)
+	$Sprite.modulate = MedAlgo.generate_hair_color()
+	#$Sprite2.modulate = MedAlgo.generate_brown()
+	$Sprite2.modulate = MedAlgo.generate_skin_color()
 	#$Sprite3.modulate = Color(randf(), randf(), randf())
 	
 	pass
